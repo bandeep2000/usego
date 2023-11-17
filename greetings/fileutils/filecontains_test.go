@@ -9,7 +9,7 @@ func TestFileContains(t *testing.T) {
 
 	file := New("p2.txt")
 	stringToChk := "together"
-	isStrPresent, _ := file.checkForStringInFile("together")
+	isStrPresent, _ := file.CheckForStringInFile("together")
 
 	if isStrPresent == true {
 
@@ -26,7 +26,7 @@ func TestFileExists(t *testing.T) {
 
 	file := New("noexistingfile")
 
-	_, err := file.checkForStringInFile("together")
+	_, err := file.CheckForStringInFile("together")
 
 	if err == nil {
 
