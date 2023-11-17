@@ -3,7 +3,7 @@ module use-dep
 go 1.20
 
 require (
-	github.com/bandeep2000/usego/greetings v0.0.0-20231116211321-b5300305d85e
+	github.com/bandeep2000/usego/greetings v0.0.0-20231117064203-732bc28c68e0
 	github.com/stretchr/testify v1.8.4
 )
 
