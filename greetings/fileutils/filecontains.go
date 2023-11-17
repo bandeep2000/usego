@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func (f *fileDetails) checkForStringInFile(stringToChk string) (bool, error) {
+func (f *fileDetails) CheckForStringInFile(stringToChk string) (bool, error) {
 
 	file, err := os.Open(f.filePath)
 	if err != nil {
