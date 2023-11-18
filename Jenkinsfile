@@ -8,6 +8,7 @@ pipeline {
             steps {
                 echo 'Starting the build process...'
                 sh 'go version' // Checking Go version as an example command
+                sh 'pwd' // Checking Go version as an example command
                 // Add more Go build commands here
                 echo 'Build completed!'
             }
