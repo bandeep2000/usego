@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func (f *fileDetails) CheckForStringInFile(stringToChk string) (bool, error) {
+func (f fileDetails) CheckForStringInFile(stringToChk string) (bool, error) {
 
 	file, err := os.Open(f.filePath)
 	if err != nil {
@@ -46,9 +46,9 @@ type fileDetails struct {
 
 // Constructor, returns pointer to the file structures
 // Teaks inputs with file name
-func New(filename string) *fileDetails {
+func New(filename string) fileDetails {
 
-	file := &fileDetails{filename}
+	file := fileDetails{filename}
 
 	return file
 

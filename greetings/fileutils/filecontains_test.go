@@ -9,9 +9,9 @@ func TestFileContains(t *testing.T) {
 
 	file := New("p2.txt")
 	stringToChk := "together"
-	isStrPresent, _ := file.CheckForStringInFile("together")
+	isStrPresent, _ := file.CheckForStringInFile(stringToChk)
 
-	if isStrPresent == true {
+	if isStrPresent != true {
 
 		t.Errorf("Test failed: function returned true although string '%v' was not found", stringToChk)
 
