@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'golang:latest' // Using the latest Go Docker image
-            args '-u root' // Optionally, run as root if necessary
-        }
+    agent any
     }
     
     stages {
