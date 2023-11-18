@@ -16,7 +16,7 @@ pipeline {
                 sh 'printenv' // Checking Go version as an example command
                 dir ('greetings/fileutils') {
                    //sh 'go mod init test' // Checking Go version as an example command
-                   sh 'go test .' // Checking Go version as an example command
+                   sh 'go test -run  TestFileContains -cover' // Run coverage with test
                 }
                 // Add more Go build commands here
                 echo 'Build completed!'
