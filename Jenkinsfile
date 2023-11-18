@@ -11,6 +11,8 @@ pipeline {
                 sh 'pwd' // Checking Go version as an example command
                 sh 'ls' // Checking Go version as an example command
                 sh 'printenv' // Checking Go version as an example command
+                sh 'cd cd greetings/fileutils' // Checking Go version as an example command
+                sh 'go test .' // Checking Go version as an example command
                 // Add more Go build commands here
                 echo 'Build completed!'
             }
