@@ -8,12 +8,18 @@ import (
 	"strings"
 )
 
+// methods takes file as receiver , checks for string present in file
+// returns true or false with error
+// returns fatal error if file passed incorrectly
 func (f fileDetails) CheckForStringInFile(stringToChk string) (bool, error) {
 
 	file, err := os.Open(f.filePath)
 	if err != nil {
 		log.Fatal(err)
-		fmt.Println("executed")
+		//fmt.Println("executed")
+		// using false here although irrelevant as functions
+		// returns boolean , wanted to return error
+		//same is below in scanner.error code
 		return false, err
 	}
 
