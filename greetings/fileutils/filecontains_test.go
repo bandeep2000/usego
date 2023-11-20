@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-// Tests if string is present
+// Tests if string is present in the file
 func TestFileContains(t *testing.T) {
 
 	file := New("p2.txt")
