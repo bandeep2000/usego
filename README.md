@@ -27,9 +27,24 @@ func main() {
 
     // Check for file contains a string
    file1 := fileutils.New("p2.txt")
-
+   // check for for error as it return nil
    fmt.Println(file1.CheckForStringInFile("blah"))
 
 }
 ```
+**Note:** Above example assumes you have *p2.txt* in the current directory with *blah* string to find in the file
+## Run 
 
+``` 
+go mod init example 
+go mod tidy
+go run . 
+```
+Note: It might ask you to run *go get <module name>* 
+
+Example output:
+```
+go run .
+hello1
+false <nil>
+```
