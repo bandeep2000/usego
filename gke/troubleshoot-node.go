@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"gke/troubleshooting"
+	"os"
 )
 
 func PrintArray(arr1 []string) {
@@ -17,6 +18,17 @@ func PrintArray(arr1 []string) {
 
 func main() {
 
-	PrintArray(troubleshooting.GetNodeFailureCmds())
+	if len(os.Args) == 1 {
+
+		fmt.Println("Please pass an argument")
+		os.Exit(1)
+
+	}
+
+	if os.Args[1] == "t" {
+
+		PrintArray(troubleshooting.GetNodeFailureCmds())
+
+	}
 
 }
