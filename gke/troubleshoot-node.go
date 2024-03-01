@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"gke/etcdcmd"
 	"gke/troubleshooting"
 	"os"
 )
@@ -28,6 +29,12 @@ func main() {
 	if os.Args[1] == "t" {
 
 		PrintArray(troubleshooting.GetNodeFailureCmds())
+
+	}
+
+	if os.Args[1] == "e" {
+
+		PrintArray(etcdcmd.GetCmds())
 
 	}
 

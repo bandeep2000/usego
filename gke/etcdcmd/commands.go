@@ -1,6 +1,6 @@
 package etcdcmd
 
-func getcmds() []string {
+func GetCmds() []string {
 
 	cmds := []string{
 		"k get all --all-namespaces -o yaml > all-service.yaml # back up everything",
